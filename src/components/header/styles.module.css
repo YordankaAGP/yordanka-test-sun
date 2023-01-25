@@ -1,0 +1,46 @@
+.fixed-header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.header-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.125rem;
+  max-width: var(--max-w);
+  padding: 0 3.375rem;
+}
+
+.header-menu > .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: 0.75rem;
+}
+
+.link {
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  text-transform: capitalize;
+}
+
+.cta {
+  margin-left: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+}

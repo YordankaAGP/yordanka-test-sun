@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 3.375rem;
+  padding: var(--px-big);
   max-width: var(--max-w);
   margin: 0 auto;
 }
@@ -73,7 +73,7 @@
 }
 
 .services {
-  padding: 0 3.375rem;
+  padding: var(--px-big);
   max-width: var(--max-w);
   margin: 0 auto 5rem auto;
 }
@@ -128,7 +128,7 @@
 .logo {
   max-width: var(--max-w);
   margin: 0 auto 5rem auto;
-  padding: 0 3.375rem;
+  padding: var(--px-big);
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-items: center;
@@ -178,7 +178,7 @@
 .portfolio {
   max-width: var(--max-w);
   margin: 0 auto 5rem auto;
-  padding: 0 3.375rem;
+  padding: var(--px-big);
 }
 
 .portfolio ul {
@@ -233,7 +233,7 @@
 .testimonial {
   max-width: var(--max-w);
   margin: 0 auto 3rem auto;
-  padding: 0 3.375rem;
+  padding: var(--px-big);
 }
 
 .testimonies {
@@ -337,13 +337,13 @@
 .carousel {
   max-width: var(--max-w);
   margin: 0 auto 6rem auto;
-  padding: 0 3.375rem;
+  padding: var(--px-big);
 }
 
 .consultation {
   max-width: var(--max-w);
   margin: 0 auto 5rem auto;
-  padding: 0 3.375rem;
+  padding: var(--px-big);
 }
 
 .consult {
@@ -405,6 +405,10 @@
     line-height: 2.25rem;
   }
 
+  .hero {
+    padding: var(--px-small);
+  }
+
   .hero > img {
     top: 0;
     transform: translateY(0);
@@ -444,12 +448,21 @@
     display: none;
   }
 
+  .services {
+    padding: var(--px-small);
+  }
+
   .services ul {
     grid-template-columns: repeat(1, 1fr);
   }
 
   .logo {
     grid-template-columns: repeat(3, 1fr);
+    padding: var(--px-small);
+  }
+
+  .achievement {
+    padding: 2.5rem 1.5rem;
   }
 
   .achievement > h2 {
@@ -466,9 +479,17 @@
     font-size: 1.125rem;
   }
 
+  .portfolio {
+    padding: var(--px-small);
+  }
+
   .portfolio ul {
     grid-template-columns: repeat(1, 1fr);
     gap: 0.75rem;
+  }
+
+  .testimonial {
+    padding: var(--px-small);
   }
 
   .testimonies > .left {
@@ -489,6 +510,10 @@
     line-height: 1.875rem;
   }
 
+  .carousel {
+    padding: var(--px-small);
+  }
+
   .customer-card > span {
     margin-right: 0.5rem;
     width: 2.5rem;
@@ -497,6 +522,10 @@
 
   .customer-card h5 {
     font-size: 0.75rem;
+  }
+
+  .consultation {
+    padding: var(--px-small);
   }
   
   .consult > h3 {

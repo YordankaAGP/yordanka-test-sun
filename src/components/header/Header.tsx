@@ -18,7 +18,12 @@ function Header() {
 	return (
 		<>
 			<LoginModal isActive={shouldOpenLogin} onClose={() => setShouldOpenLogin(false)} />
-			<Sidemenu menu={menu} isActive={shouldOpenSide} onClose={() => setShouldOpenSide(false)} />
+			<Sidemenu
+				menu={menu}
+				isActive={shouldOpenSide}
+				onLogin={() => setShouldOpenLogin(true)}
+				onClose={() => setShouldOpenSide(false)}
+			/>
 			<header className={styles.fixedHeader}>
 				<nav className={styles.headerMenu}>
 					<div className={styles.left}>

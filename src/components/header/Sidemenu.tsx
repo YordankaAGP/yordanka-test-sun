@@ -7,11 +7,12 @@ import LinkButton from '../button/LinkButton'
 export type ModalProps = {
 	isActive: boolean
 	onClose: () => void
+	onLogin: () => void
 	menu: Array<string>
 } & React.HTMLAttributes<HTMLElement>
 
 function Sidemenu(props: ModalProps) {
-	const { menu, isActive, onClose, className, ...rest } = props
+	const { menu, isActive, onClose, onLogin, className, ...rest } = props
 	return (
 		<>
 			<nav className={clsx(styles.sidemenu, className, { [styles.active]: isActive })} {...rest}>
@@ -24,7 +25,12 @@ function Sidemenu(props: ModalProps) {
 						{m}
 					</LinkButton>
 				))}
-				<button className={styles.cta} onClick={() => onClose()}>
+				<button
+					className={styles.cta}
+					onClick={() => {
+						onClose()
+						onLogin()
+					}}>
 					Login
 				</button>
 			</nav>

@@ -1,7 +1,7 @@
 .container {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 3.375rem;
+  padding: var(--px-big);
   text-align: left;
 }
 
@@ -83,6 +83,10 @@
 }
 
 @media (max-width: 799px) {
+  .container {
+    padding: var(--px-small);
+  }
+
   .desc {
     width: 60%;
     margin-bottom: 2rem;

@@ -72,3 +72,9 @@
     margin-right: 1rem;
   }
 }
+
+@media (max-width:799px) {
+  .header-menu {
+    padding: var(--px-small);
+  }
+}

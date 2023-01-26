@@ -16,6 +16,8 @@
   --light-grey: #c4c4c4;
   --max-w: 1280px;
   --filter-yellow: brightness(0) hue-rotate(353deg) invert(82%) sepia(43%) saturate(1337%);
+  --px-big: 0 3.375rem;
+  --px-small: 0 1.5rem;
 }
 
 * {
@@ -41,9 +43,6 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
-a:hover {
-  color: #535bf2;
-}
 
 html, body {
   height: 100%;
@@ -60,7 +59,7 @@ h1 {
 }
 
 button {
-  border-radius: 14px;
+  border-radius: 16px;
   border: 2px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -75,12 +74,20 @@ button:active {
   transform: scale(0.9);
   background-color: #ff8307;
 }
-button:hover {
-  background-color: #ffac07;
-}
+
 button:focus,
 button:focus-visible {
   outline: transparent solid 2px;
   outline-offset: 2px;
   border-color: var(--text-color);
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: #535bf2;
+  }
+  
+  button:hover {
+    background-color: #ffac07;
+  }
 }

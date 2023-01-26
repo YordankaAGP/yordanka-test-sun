@@ -24,10 +24,12 @@
   width: 100%;
 }
 
-.link-button:hover > span {
-  opacity: 0.5;
-}
-
-.link-button:hover > p {
-  color: var(--yellow);
+@media (hover: hover) {
+  .link-button:hover > span {
+    opacity: 0.5;
+  }
+  
+  .link-button:hover > p {
+    color: var(--yellow);
+  }
 }

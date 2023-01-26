@@ -44,12 +44,12 @@ function Footer() {
 						The Prominence Blok 38D No.25 Jl. Jalur Sutera Barat, Alam Sutera, Kota Tangerang,
 						Banten 15143
 					</p>
-					<p>
+					<div>
 						P: <LinkButton>+62 81 1889 3383</LinkButton>
-					</p>
-					<p>
+					</div>
+					<div>
 						E: <LinkButton>info@albatech.id</LinkButton>
-					</p>
+					</div>
 				</div>
 			</div>
 			<div className={styles.subfooter}>

@@ -18,24 +18,39 @@
   align-items: center;
   font-size: 1.125rem;
   max-width: var(--max-w);
-  padding: 0 3.375rem;
+  padding: var(--px-big);
+}
+
+.header-menu .left {
+  margin: 0;
 }
 
 .header-menu > .right {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
+}
+
+.burger {
+  padding: 0.25rem 0.5rem;
+  background-color: transparent;
+  display: none;
+}
+
+.burger > svg {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .logo {
   cursor: pointer;
-  margin-right: 0.75rem;
+  margin: 0 0.75rem 0 0;
 }
 
 .link {
   font-weight: bold;
   padding: 0.5rem 1.25rem;
-  text-transform: capitalize;
 }
 
 .cta {
@@ -45,4 +60,15 @@
   font-size: 1rem;
   font-weight: bold;
   border-radius: 30px;
+}
+
+@media (max-width: 960px) {
+  .header-menu > .right {
+    display: none;
+  }
+
+  .burger {
+    display: inline-block;
+    margin-right: 1rem;
+  }
 }

@@ -1,0 +1,77 @@
+.cta {
+  width: 11.25rem;
+  height: 3.5rem;
+  margin-left: 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.sidemenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1.5rem;
+  transform: translateX(-100%);
+  background-color: rgb(255, 249, 191);
+  box-shadow: 1px 0px 16px lightgrey;
+  transition: transform 0.25s;
+  box-shadow: none;
+  width: 60vw;
+  z-index: 50;
+}
+
+.sidemenu.active {
+  transform: translateX(0);
+  box-shadow: 1px 0px 16px lightgrey;
+}
+
+.sidemenu > svg {
+  margin-bottom: 2rem;
+}
+
+.sidemenu > a {
+  font-size: 1.125rem;
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.sidemenu > .close {
+  position: absolute;
+  padding: 0.25rem;
+  top: 0.5rem;
+  right: 1.25rem;
+  background-color: transparent;
+}
+
+.sidemenu > .close > svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.sidemenu > .cta {
+  display: block;
+  margin: 2rem auto 0 auto;
+}
+
+.sidelayer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  z-index: 49;
+}
+
+.sidelayer.active {
+  transform: translateX(0);
+}
+
+@media (max-width: 560px) {
+  .sidemenu {
+    width: 100vw;
+  }
+}

@@ -8,16 +8,18 @@ import clsx from 'clsx'
 
 const Home = () => (
 	<>
-		<section className={styles.hero}>
-			<h1>
-				<span>Build or scale up</span> <br /> <span>your development team</span>
-			</h1>
-			<div className={styles.subtitle}>
-				<div className={styles.line} />
-				<h3>in weeks, not months</h3>
+		<section className={styles.heroContainer}>
+			<div className={styles.hero}>
+				<h1>
+					<span>Build or scale up</span> <br /> <span>your development team</span>
+				</h1>
+				<div className={styles.subtitle}>
+					<div className={styles.line} />
+					<h3>in weeks, not months</h3>
+				</div>
+				<button className={styles.cta}>Book now</button>
+				<img src={imgUrl} />
 			</div>
-			<button className={styles.cta}>Book now</button>
-			<img src={imgUrl} />
 		</section>
 		<section className={styles.services}>
 			<h3 className={styles.sectionSubtitle}>Complete Package</h3>

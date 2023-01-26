@@ -7,9 +7,10 @@ import Footer from '../components/footer/Footer'
 function Layout() {
 	return (
 		<div className={styles.layoutContainer}>
-			<Header onBurgerClick={() => {}} onLoginClick={() => {}} />
-			<Texture className={styles.texture1} />
-			<Texture className={styles.texture2} />
+			<Header />
+			{/* Bug on mobile but fine on desktop */}
+			{/* <Texture className={styles.texture1} />
+			<Texture className={styles.texture2} /> */}
 			<Outlet />
 			<Footer />
 		</div>

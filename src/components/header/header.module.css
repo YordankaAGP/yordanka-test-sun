@@ -39,6 +39,8 @@
 }
 
 .cta {
+  width: 11.25rem;
+  height: 3.5rem;
   margin-left: 0.625rem;
   font-size: 1rem;
   font-weight: bold;

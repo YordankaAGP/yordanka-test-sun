@@ -13,7 +13,9 @@
 
   --text-color: #272727;
   --yellow: #FFCE07;
+  --light-grey: #c4c4c4;
   --max-w: 1280px;
+  --filter-yellow: brightness(0) hue-rotate(353deg) invert(82%) sepia(43%) saturate(1337%);
 }
 
 * {
@@ -25,9 +27,13 @@
 }
 
 #root {
-  max-width: var(--max-w);
-  margin: 0 auto;
   text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {

@@ -1,5 +1,4 @@
-import clsx from 'clsx'
-import styles from './styles.module.css'
+import styles from './header.module.css'
 import LinkButton from '../button/LinkButton'
 import { ReactComponent as Logo } from '../../assets/alba-logo.svg'
 

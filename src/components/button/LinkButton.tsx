@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import styles from './styles.module.css'
+import styles from './link.module.css'
 
 type Props = React.HTMLAttributes<HTMLAnchorElement> & {
 	children?: string

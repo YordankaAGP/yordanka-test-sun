@@ -20,7 +20,7 @@
   background-color: white;
   box-shadow: 1px 1px 10px lightgrey;
   border-radius: 22px;
-  width: 30%;
+  width: 35%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -39,14 +39,14 @@
   z-index: 59;
 }
 
-@media (max-width: 480px) {
-  .modal {
-    width: 80%;
-  }
-}
-
 @media (max-width: 900px) {
   .modal {
     width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    width: 80%;
   }
 }

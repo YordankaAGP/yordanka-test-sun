@@ -5,10 +5,14 @@ import { ReactComponent as Burger } from '../../assets/burger.svg'
 import { useState } from 'react'
 import LoginModal from '../modal/LoginModal'
 import Sidemenu from './Sidemenu'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const menu: Array<string> = ['Service', 'About', 'Portofolio', 'Blog', 'Career']
 
 function Header() {
+	const { state } = useLocation()
+	const { pathname } = useLocation()
+	const navigate = useNavigate()
 	const [shouldOpenSide, setShouldOpenSide] = useState(false)
 	const [shouldOpenLogin, setShouldOpenLogin] = useState(false)
 	return (
@@ -21,7 +25,10 @@ function Header() {
 						<button onClick={() => setShouldOpenSide(!shouldOpenSide)} className={styles.burger}>
 							<Burger />
 						</button>
-						<Logo className={styles.logo} />
+						<Logo
+							onClick={() => (pathname === '/' ? undefined : navigate('/'))}
+							className={styles.logo}
+						/>
 					</div>
 					<div className={styles.right}>
 						{menu.map((m) => (
@@ -29,9 +36,11 @@ function Header() {
 								{m}
 							</LinkButton>
 						))}
-						<button className={styles.cta} onClick={() => setShouldOpenLogin(true)}>
-							Login
-						</button>
+						{!state && !state?.token && (
+							<button className={styles.cta} onClick={() => setShouldOpenLogin(true)}>
+								Login
+							</button>
+						)}
 					</div>
 				</nav>
 			</header>
